@@ -1,0 +1,29 @@
+
+# Служебные файлы и кэш Visual Studio
+*.sdf
+*.suo
+*.opensdf
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Папки сборки и промежуточные файлы компиляции
+Debug/
+Release/
+x64/
+[Bb]in/
+[Oo]bj/
+ipch/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.log
+*.tlog
+*.lastbuildstate
+
+# Системные файлы
+Thumbs.db
+.DS_Store
