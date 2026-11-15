@@ -79,3 +79,6 @@ During reverse engineering on an **Xbox 360 Slim (Kernel 16537)**, the **Flydigi
 
 ## 🤝 Contributing
 Have a different third-party controller, or captured the USB initialization sequence for Flydigi on PC? **Open an Issue or submit a Pull Request**—every bit of research helps keep the Xbox 360 scene alive!
+
+## 🙏 Credits & Acknowledgments
+- **UsbdSecPatch:** The initial concept of patching `UsbdIsDeviceAuthenticated` (Ordinal `745`) in `xboxkrnl.exe` and the base DashLaunch XEX plugin structure were inspired by and referenced from the open-source [UsbdSecPatch](https://github.com) project. This repository expands upon that foundation by adding **Kernel 16537** offsets and **64-byte (`0x40`) USB packet/buffer support** in `OHCI` and `Wgc`.
