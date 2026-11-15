@@ -1,5 +1,7 @@
 # XFlydigiPatch *(Soon to be renamed — Universal XInput Patcher)*
 
+**[🇬🇧 English](README.md) | [🇷🇺 Русский](README_ru.md)**
+
 > **⚠️ Experimental / Research Project — Contributions Welcome!**
 > This project was originally started for personal use to get a **Flydigi Dune Fox** controller working on an RGH console, which is why it currently carries this name. However, its core patches are universal, and **the repository will soon be renamed** to reflect its broader goal: enabling unsupported third-party USB controllers on Xbox 360.
 >
