@@ -65,8 +65,8 @@ During reverse engineering on an **Xbox 360 Slim (Kernel 16537)**, the **Flydigi
 
 ### Building from Source
 1. Install the **Xbox 360 SDK (XEDK)** and verify that the `XEDK` environment variable is set.
-2. Run `build.bat` (or open the `.sln` in Visual Studio) to compile `main.cpp` and pack `XFlydigiPatch.xex`.
-3. In `build.bat`, press `A` to rebuild at any time, or `Q` to quit.
+2. Run `builder.bat` (or open the `.sln` in Visual Studio) to compile `main.cpp` and pack `XFlydigiPatch.xex`.
+3. In `builder.bat`, press `A` to rebuild at any time, or `Q` to quit.
 
 ### Installing on Xbox 360 (DashLaunch)
 1. Copy `XFlydigiPatch.xex` to the root of your internal hard drive (`Hdd1:\`) or USB flash drive (`Usb0:\`).
