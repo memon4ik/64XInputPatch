@@ -1,0 +1,3 @@
+LIBRARY XFlydigiPatch
+EXPORTS
+    DllMain @1
