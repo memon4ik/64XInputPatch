@@ -1,9 +1,9 @@
-# XFlydigiPatch *(Soon to be renamed — Universal XInput Patcher)*
+# 64XInputPatch
 
 **[🇬🇧 English](README.md) | [🇷🇺 Русский](README_RU.md)**
 
 > **⚠️ Experimental / Research Project — Contributions Welcome!**
-> This project was originally started for personal use to get a **Flydigi Dune Fox** controller working on an RGH console, which is why it currently carries this name. However, its core patches are universal, and **the repository will soon be renamed** to reflect its broader goal: enabling unsupported third-party USB controllers on Xbox 360.
+> **64XInputPatch** is an open-source DashLaunch kernel plugin for **Xbox 360 (RGH/JTAG)** designed to bypass XSM3 hardware security checks and expand USB `OHCI` / `Wgc` (`Wired Game Controller`) packet buffer limits from **32 bytes (`0x20`)** to **64 bytes (`0x40`)** to support non-standard third-party XInput controllers.
 >
 > **Status:** Currently tested on **Kernel 16537** with a Flydigi Dune Fox (which successfully enumerates and holds `Slot 0`, though button inputs remain blocked by Flydigi's proprietary Windows host handshake). **Developers and RGH enthusiasts are encouraged to inspect the code, study the included memory dumps, adapt the patches for other gamepads, and share their improvements via Pull Requests or Issues!**
 
@@ -73,7 +73,7 @@ During reverse engineering on an **Xbox 360 Slim (Kernel 16537)**, the **Flydigi
 2. Add it to your `launch.ini`:
    ```ini
    [Plugins]
-   plugin1 = Hdd1:\XFlydigiPatch.xex
+   plugin1 = Hdd1:\64XInputPatch.xex
    ```
 3. Reboot your console.
 
