@@ -1,12 +1,13 @@
 @echo off
 cd /d "%~dp0"
+if exist "64XInputPatch\main.cpp" cd /d "64XInputPatch"
 if exist "XFlydigiPatch\main.cpp" cd /d "XFlydigiPatch"
 setlocal enabledelayedexpansion
 
-title XFlydigiPatch Builder (Kernel 16537)
+title 64XInputPatch Builder (Kernel 16537 / 17559)
 color 0B
 
-set "OUTNAME=XFlydigiPatch"
+set "OUTNAME=64XInputPatch"
 set "SOURCEFILE=main"
 set "BUILD_DIR=build"
 set "INCLUDE=%XEDK%\include\xbox"
@@ -16,7 +17,7 @@ set "BINARYPATH=%XEDK%\bin\win32"
 :BUILD_LOOP
 cls
 color 0B
-echo XFlydigiPatch Builder ^| Xbox 360 Kernel 16537
+echo 64XInputPatch Builder ^| Xbox 360 Kernel 16537 / 17559
 echo Source: %SOURCEFILE%.cpp -^> Output: %OUTNAME%.xex
 echo ------------------------------------------------------------
 
