@@ -1,4 +1,8 @@
 # 64XInputPatch
+![Kernel](https://img.shields.io/badge/kernel-16537%20%7C%2017559-blue)
+![Platform](https://img.shields.io/badge/platform-Xbox%20360%20RGH%2FJTAG-green)
+![License](https://img.shields.io/badge/license-MIT-yellow)
+![Status](https://img.shields.io/badge/status-experimental-orange)
 
 **[🇬🇧 English](README.md) | [🇷🇺 Русский](README_RU.md)**
 
