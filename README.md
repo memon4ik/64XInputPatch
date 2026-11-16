@@ -37,5 +37,5 @@ This project was built in collaboration with an **AI assistant** to analyze low-
    ```
 3. Reboot your console.
 
-## 🤝 Contributing & Credits
-Contributions, pull requests, and research on alternative third-party controllers are welcome. Special thanks to the open-source **UsbdSecPatch** project by InvoxiPlayGames, which inspired the `UsbdIsDeviceAuthenticated` (Ordinal `745`) kernel patching approach.
+## 🙏 Credits & Acknowledgments
+- **UsbdSecPatch:** The initial concept of patching `UsbdIsDeviceAuthenticated` (Ordinal `745`) in `xboxkrnl.exe` and the base DashLaunch XEX plugin structure were inspired by and referenced from the open-source [UsbdSecPatch](https://github.com/InvoxiPlayGames/UsbdSecPatch) project. This repository expands upon that foundation by adding **Kernel 16537** offsets and **64-byte (`0x40`) USB packet/buffer support** in `OHCI` and `Wgc`.
