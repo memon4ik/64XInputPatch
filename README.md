@@ -37,6 +37,17 @@ When you connect a modern third-party PC gamepad to an Xbox 360, the console blo
 
 ---
 
+## 🗂️ About the `dumps/` Folder
+
+The `dumps/` directory contains raw research artifacts captured from **Kernel 16537** during the development of this plugin. **Please note:**
+
+- **File names are chaotic and not standardized.** They were saved quickly during live debugging sessions and do not follow a consistent naming scheme.
+- **Some dumps are missing.** Not every memory region or disassembly snippet was preserved — only the ones that were critical at the moment of capture.
+- **How to use them:** If you need to understand what a particular dump contains, **feed it to an AI assistant** (or use a disassembler like IDA Pro / Ghidra) and ask it to identify the code, addresses, and structures. The `main.cpp` source and the Patch Map above provide the context needed to correlate the dumps with specific kernel functions.
+- **What you can expect to find:** kernel heap fragments, OHCI endpoint descriptors, and disassembled PowerPC code sections related to `UsbdIsDeviceAuthenticated`, `OHCI_OpenEndpoint`, `WgcAddDevice`, and `Wgc` report parsing.
+
+If you have questions about a specific dump, feel free to open an Issue — but please include the file name and, if possible, a short description of what you were looking for.
+
 ## 🔍 Research Findings: Flydigi Dune Fox and Wireshark Traffic Analysis
 During reverse engineering on an **Xbox 360 Slim (Kernel 16537)** and USB traffic capture on a PC via **Wireshark / USBPcap**, the **Flydigi Dune Fox** controller (both via 2.4G dongle and wired USB-C) showed the following:
 - **USB Descriptors:** Enumerates as `VID_045E&PID_028E` with 8 composite interfaces and 64-byte endpoints (`EP 0x81` IN / `EP 0x02` OUT).
